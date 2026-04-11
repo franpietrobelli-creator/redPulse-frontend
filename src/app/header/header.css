@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 16px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #212121;
+}
+
+.logo-pulse {
+  color: #E53935;
+}
+
+.menu-icon, .user-icon {
+  font-size: 22px;
+  cursor: pointer;
+  color: #616161;
+}
