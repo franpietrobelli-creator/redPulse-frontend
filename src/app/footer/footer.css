@@ -1,7 +1,20 @@
 .footer {
-  background-color: #E53935;
-  color: #ffffff;
-  text-align: center;
-  padding: 16px;
-  font-size: 13px;
+  background: #ffffff;
+  padding: 12px 0 8px;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  bottom: 0;
 }
+.footer-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.icon { font-size: 20px; }
+.label { font-size: 11px; color: #aaa; }
+.footer-btn.active .label { color: #E53935; }

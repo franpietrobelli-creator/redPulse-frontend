@@ -1,86 +1,53 @@
 .home {
-  padding: 16px;
-  background-color: #F5F5F5;
-  min-height: 100vh;
+  padding: 24px 20px;
+  background: #fafafa;
+  min-height: calc(100vh - 120px);
 }
-
-.search-bar input {
-  width: 100%;
-  padding: 10px 16px;
-  border-radius: 24px;
-  border: 1px solid #ccc;
+.greeting {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+.subtitle {
   font-size: 14px;
-  box-sizing: border-box;
+  color: #888;
+  margin-bottom: 24px;
 }
-
-.banner {
-  background-color: #E53935;
-  color: white;
-  border-radius: 12px;
-  padding: 20px;
-  margin: 16px 0;
-  text-align: center;
-}
-
-.banner h2 {
-  margin: 0 0 8px;
-  font-size: 18px;
-}
-
-.banner p {
-  font-size: 13px;
-  margin: 0 0 12px;
-}
-
-.btn-primary {
-  background-color: #ffffff;
-  color: #E53935;
-  border: none;
-  border-radius: 24px;
-  padding: 8px 24px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.stats {
-  display: flex;
-  justify-content: space-around;
-  margin: 16px 0;
-}
-
-.stat-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.stat-number {
-  font-size: 20px;
-  font-weight: bold;
-  color: #212121;
-}
-
-.stat-label {
-  font-size: 12px;
-  color: #616161;
-}
-
-.menu-cards {
-  display: flex;
-  flex-direction: column;
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 12px;
-  margin-top: 16px;
+  margin-bottom: 28px;
 }
-
 .card {
-  padding: 18px 20px;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #212121;
+  border-radius: 16px;
+  padding: 24px 16px;
   cursor: pointer;
+  display: flex;
+  align-items: flex-end;
 }
-
-.card-doadores { background-color: #fce4e4; }
-.card-medicos  { background-color: #e3f2fd; }
-.card-hospitais { background-color: #e8f5e9; }
+.card.red { background: #E53935; }
+.card.pink { background: #FADADD; }
+.card.blue { background: #E3F2FD; }
+.card.green { background: #E8F5E9; }
+.card-label { font-size: 13px; font-weight: 600; }
+.card.red .card-label { color: #fff; }
+.card.pink .card-label { color: #C62828; }
+.card.blue .card-label { color: #1565C0; }
+.card.green .card-label { color: #2E7D32; }
+.section-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+.list-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  border: 0.5px solid #eee;
+}
+.name { font-size: 13px; font-weight: 600; color: #1a1a1a; }
+.info { font-size: 11px; color: #999; margin-top: 3px; }

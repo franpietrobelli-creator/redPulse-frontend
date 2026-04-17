@@ -1,32 +1,29 @@
 <div class="home">
-  <div class="search-bar">
-    <input type="text" placeholder="Buscar..." />
-  </div>
+  <div class="greeting">Olá, usuário 👋</div>
+  <div class="subtitle">O que deseja fazer hoje?</div>
 
-  <div class="banner">
-    <h2>Doe Sangue, Salve Vidas</h2>
-    <p>Encontre doadores e hospitais próximos a você.</p>
-    <button class="btn-primary">Saiba Mais</button>
-  </div>
-
-  <div class="stats">
-    <div class="stat-item">
-      <span class="stat-number">1.2k</span>
-      <span class="stat-label">Doadores</span>
+  <div class="cards">
+    <div class="card red" routerLink="/bolsas">
+      <span class="card-label">Doe Sangue</span>
     </div>
-    <div class="stat-item">
-      <span class="stat-number">348</span>
-      <span class="stat-label">Doações</span>
+    <div class="card pink" routerLink="/doadores">
+      <span class="card-label">Doadores</span>
     </div>
-    <div class="stat-item">
-      <span class="stat-number">52</span>
-      <span class="stat-label">Hospitais</span>
+    <div class="card blue" routerLink="/hospitais">
+      <span class="card-label">Hospitais</span>
+    </div>
+    <div class="card green" routerLink="/medicos">
+      <span class="card-label">Médicos</span>
     </div>
   </div>
 
-  <div class="menu-cards">
-    <div class="card card-doadores">👤 Doadores</div>
-    <div class="card card-medicos">🩺 Médicos</div>
-    <div class="card card-hospitais">🏥 Hospitais</div>
+  <div class="section-title">Doações Recentes</div>
+  <div class="list-item">
+    <div class="name">João Silva · A+</div>
+    <div class="info">Localização: São Paulo · Há 2 horas</div>
+  </div>
+  <div class="list-item">
+    <div class="name">Maria Clara · AB-</div>
+    <div class="info">Localização: Paraná · Há 6 horas</div>
   </div>
 </div>
